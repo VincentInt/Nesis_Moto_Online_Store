@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ask_type_motobike.css" />
+    <!--Подключение иконок для кнопок-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <!--------------------------------->
+    <script src="js/ask_type_motobike-dist.js"></script>
+    <title>NESIS - Интернет магазин электро техники.</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="first_header_sect">
+        <div class="logotype_div">
+          <button class="button_first_nav">
+            <img
+              src="img/5d0def5752538daa1573d1d283b444e6.png"
+              alt="logo"
+              class="logo_button"
+            />
+            <h2>NESIS</h2>
+          </button>
+        </div>
+        <nav class="nav_first_header">
+          <button onclick="join_button()" class="button_first_nav">
+            <span class="material-symbols-outlined"> logout </span>
+            <h2>Войти</h2>
+          </button>
+          <button class="button_first_nav">
+            <span class="material-symbols-outlined"> info </span>
+            <h2>О нас</h2>
+          </button>
+          <button class="button_first_nav">
+            <span class="material-symbols-outlined"> favorite </span>
+            <h2>Избранное</h2>
+          </button>
+          <button class="button_first_nav">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <h2>Корзина</h2>
+          </button>
+        </nav>
+      </section>
+      <section class="two_header_sect">
+        <nav>
+          <div>
+            <button id="katalog" class="button_two_nav">
+              <div>
+                <span class="material-symbols-outlined"> menu </span>
+                <h2>Каталог</h2>
+              </div>
+              <ul id="burger" class="burger_katalog_main">
+                <li><a href="#">Мотоциклы</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Запчасти</a></li>
+                <li><a href="#">Консультация</a></li>
+                <li><a href="#">Жидкости</a></li>
+                <li><a href="#">Экипировка</a></li>
+              </ul>
+            </button>
+            <button class="button_two_nav">
+              <div>
+                <span class="material-symbols-outlined"> inventory_2 </span>
+                <h2>Акции</h2>
+              </div>
+            </button>
+            <button class="button_two_nav">
+              <div>
+                <span class="material-symbols-outlined"> newspaper </span>
+                <h2>Журнал</h2>
+              </div>
+            </button>
+            <button class="button_two_nav">
+              <div>
+                <span class="material-symbols-outlined"> attach_money </span>
+                <h2>Кредиты</h2>
+              </div>
+            </button>
+          </div>
+          <form action="">
+            <span class="material-symbols-outlined"> search </span>
+            <input type="text" placeholder="Поиск" name="" id="" />
+          </form>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/037ff991-2edb-4097-8b01-1473e985ed28(600_400).png"
+              alt="picture_moto_classic"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Классик</h1>
+            <p>
+              Мотоцикл классической компоновки. Наиболее универсальные
+              мотоциклы, исторически предшествовали всем остальным. Мотоциклы
+              этого типа обеспечивают прямую посадку. В отличие от мотоциклов
+              спортивного стиля лишены аэродинамических обтекателей.
+            </p>
+          </div>
+        </button>
+      </section>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/Triumph-Tiger-800XC.png"
+              alt="picture_moto_classic"
+              width="513.48px"
+              height="324.7px"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Спортивный</h1>
+            <p>
+              Мотоциклы этого типа проектируются в расчёте на максимальные
+              динамические качества при езде по дорогам с качественным твёрдым
+              покрытием. По сравнению с классической компоновкой имеют худшие
+              показатели экономичности, безопасности и удобства управления. Для
+              снижения аэродинамического сопротивления на больших скоростях, как
+              правило, имеют обтекатель двигателя и лобовой обтекатель.
+            </p>
+          </div>
+        </button>
+      </section>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/add201705101717332.png"
+              alt="picture_moto_classic"
+              width="513.48px"
+              height="324.7px"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Супербайк</h1>
+            <p>
+              Более мощные, лёгкие, управляемые и скоростные версии спортбайков.
+              Часто представляют собой так называемый «заводской тюнинг»
+              спортбайков.
+            </p>
+          </div>
+        </button>
+      </section>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/109ad2b29743577237258eeb6d1867f8.png"
+              alt="picture_moto_classic"
+              width="513.48px"
+              height="324.7px"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Крузер</h1>
+            <p>
+              Название происходит от английского слова «круиз». Характеризуется
+              низким сиденьем, удобной вертикальной посадкой, мощным двигателем,
+              усиленными тормозами и подвеской. Появился в США в 1930-е годы и
+              сохранял популярность до 1960-х. Наиболее известные производители
+              Харлей-Дэвидсон, Индиан и Excelsior-Henderson. Круизер не
+              предназначен для быстрой езды или езды по пересечённой местности,
+              его предназначение — дальние поездки, вплоть до кругосветных.
+            </p>
+          </div>
+        </button>
+      </section>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/97u9689zbp7l24ds1ii63hbros4pvhu3.png"
+              alt="picture_moto_classic"
+              width="513.48px"
+              height="324.7px"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Мотард</h1>
+            <p>
+              В основном предназначены для езды по дорогам, но могут хорошо себя
+              показать и на внедорожной местности. Обладают высокой посадкой
+              водителя, хорошей управляемостью, и мощным двигателем.
+            </p>
+          </div>
+        </button>
+      </section>
+      <section class="section_card_type">
+        <div class="image_filter"></div>
+        <button class="button_card_type">
+          <picture>
+            <img
+              src="img/avtozapchasti.jpg"
+              alt="picture_moto_classic"
+              width="513.48px"
+              height="324.7px"
+              class="img_card_type"
+            />
+          </picture>
+          <div>
+            <h1>Запчасти</h1>
+            <p>
+              Запасная часть — изделие, деталь, являющееся составной частью
+              более крупного изделия, предназначенная для замены находившейся в
+              эксплуатации такой же части с целью ремонта, поддержания или
+              восстановления исправного или работоспособного состояния изделия.
+              Используется преимущественно в контексте техники.
+            </p>
+          </div>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <div class="div_footer_container">
+        <h1>Контакты:</h1>
+        <a href="https://t.me/EbalFemok2006">Telegram</a>
+        <br />
+        <a href="#">Instagram</a>
+        <br />
+        <a href="#">Телефон: +7 988 47 52 201</a>
+        <br />
+        <address>РФ, Краснодарский край, Краснодар, ул. Ебучих, д.25</address>
+      </div>
+      <div class="div_footer_container">
+        <p>
+          Следует отметить, что семантический разбор внешних противодействий, в
+          своём классическом представлении, допускает внедрение своевременного
+          выполнения сверхзадачи. В рамках спецификации современных стандартов,
+          некоторые особенности внутренней политики и по сей день остаются
+          уделом либералов, которые жаждут быть объявлены нарушающими
+          общечеловеческие нормы этики и морали. Идейные соображения высшего
+          порядка, а также повышение уровня гражданского сознания играет
+          определяющее значение для стандартных подходов. Не следует, однако,
+          забывать, что новая модель организационной деятельности в значительной
+          степени обусловливает важность форм воздействия. Задача организации, в
+          особенности же дальнейшее развитие различных форм деятельности, в
+          своём классическом представлении, допускает внедрение распределения
+          внутренних резервов и ресурсов.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
