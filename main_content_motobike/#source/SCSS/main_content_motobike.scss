@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap");
+body {
+  background: rgb(255, 255, 255);
+  text-decoration-color: #ffffff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 22px;
+}
+:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ol,
+select,
+ul,
+button,
+input,
+option,
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration-color: #292929;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  overflow-x: hidden;
+  width: 1920px;
+}
+fieldset {
+  display: block;
+}
+//----------------------------------------------//
+$yellow_color: #f9b21a;
+$black_color: black;
+$white_color: white;
+$grey_color: grey;
+$grey_color_text: rgb(161, 161, 161);
+//----------------------------------------------//
+.first_header_sect {
+  display: flex;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $yellow_color;
+  .logotype_div {
+    .button_first_nav {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 40px;
+      }
+      .logo_button {
+        height: 80px;
+        padding-right: 30px;
+      }
+    }
+  }
+  .nav_first_header {
+    display: flex;
+    .button_first_nav {
+      display: flex;
+      cursor: pointer;
+      padding: 10px 5px;
+      margin-left: 20px;
+      background-color: transparent;
+      border: none;
+      .material-symbols-outlined {
+        margin-top: 2px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.two_header_sect {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: $black_color;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 320px;
+  padding-right: 320px;
+  nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      .button_two_nav {
+        cursor: pointer;
+        padding: 10px 5px;
+        margin-right: 40px;
+        background-color: transparent;
+        border: none;
+
+        div {
+          display: flex;
+        }
+        h2 {
+          color: white;
+        }
+        .material-symbols-outlined {
+          margin-top: 2px;
+          margin-right: 5px;
+          color: white;
+        }
+      }
+      .button_two_nav {
+        &:hover {
+          div {
+            h2 {
+              color: $grey_color_text;
+            }
+            .material-symbols-outlined {
+              color: $grey_color_text;
+            }
+          }
+        }
+      }
+    }
+    form {
+      align-items: center;
+      .material-symbols-outlined {
+      }
+      input {
+        border: 1px $grey_color_text;
+        border-radius: 5px;
+        outline: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+      }
+    }
+  }
+  .burger_katalog_main {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    background-color: black;
+    border: 1px $black_color;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    a {
+      text-decoration: none;
+      color: white;
+      margin-right: 40px;
+      &:hover {
+        color: rgb(161, 161, 161);
+      }
+    }
+  }
+  #katalog {
+    &:hover {
+      #burger {
+        display: flex;
+      }
+    }
+  }
+}
+main {
+  .section_filter_price {
+    background-color: $black_color;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 320px;
+    padding-right: 320px;
+    h2 {
+      color: $white_color;
+      font-size: 40px;
+    }
+    .select_filter {
+      cursor: pointer;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      background-color: $yellow_color;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $black_color;
+      option {
+        cursor: pointer;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+      }
+    }
+  }
+  .section_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    .button_container {
+      text-align: center;
+      margin-bottom: 10px;
+      .button_reset{
+        cursor: pointer;
+        color: white;
+        background-color: $yellow_color;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 40px;
+      }
+      .button_apply {
+        cursor: pointer;
+        color: white;
+        background-color: $yellow_color;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+    .section_card_product {
+      width: 1270px;
+      .display_none{
+        display:none
+      }
+      .container_card {
+        cursor: pointer;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        outline: none;
+        background-color: white;
+        margin-left: 20px;
+        border-radius: 10px;
+        border: none;
+        &:hover{
+          filter: brightness(80%)
+
+
+        }
+        .logo_card_motobike {
+          width: 400px;
+          height: 250px;
+        }
+        .container_card_button_info {
+          background-color: black;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 8px;
+          h3 {
+            color: white;
+            font-size: 30px;
+          }
+          p {
+            color: white;
+          }
+          h4 {
+            color: white;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .fileter {
+      display: flex;
+      color: white;
+      width: 350px;
+      border-radius: 8px;
+      height: 100%;
+      padding-top: 50px;
+      background-color: rgb(0, 0, 0);
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 35px;
+      }
+      .price_filter {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+        input[type="number"] {
+          width: 120px;
+          text-align: center;
+          outline: none;
+          font-size: 18px;
+          border: none;
+          margin-right: 20px;
+          border-radius: 3px;
+        }
+      }
+      .hp_filter {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+        input[type="number"] {
+          width: 120px;
+          text-align: center;
+          outline: none;
+          border: none;
+          font-size: 18px;
+          margin-right: 20px;
+          border-radius: 3px;
+        }
+      }
+      .volume_filter {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+        input[type="number"] {
+          width: 120px;
+          text-align: center;
+          outline: none;
+          font-size: 18px;
+          border: none;
+          margin-right: 20px;
+          border-radius: 3px;
+        }
+      }
+      .type_engine_filter {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+      }
+      .container_type_engine_filter {
+        input[type="checkbox"] {
+          cursor: pointer;
+        }
+      }
+      .type_filter {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+      }
+      .container_type_motobike_filter {
+        input[type="checkbox"] {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
